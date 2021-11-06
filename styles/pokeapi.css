@@ -1,0 +1,112 @@
+body {
+    background-color: orangered;
+    margin: 0;
+    font-family: rubik;
+    color: white;
+  }
+  .container {
+    padding: 40px;
+    margin: 0 auto;
+  }
+  h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 54px;
+  }
+  .card {
+    list-style: none;
+    padding: 40px;
+    /* background-color: #f4f4f4; */
+    background-image: url("../background.png");
+    color: #222;
+    text-align: center;
+    position: relative;
+    height: 387px;
+  }
+  .card-title {
+    /* text-transform: uppercase; */
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+    position: absolute;
+    top: 10px;
+    left: 35px;
+  }
+  .card-experience {
+    /* text-transform: uppercase; */
+    font-size: 20px;
+    font-weight: bold;
+    margin-bottom: 0;
+    position: absolute;
+    top: 10px;
+    right: 35px;
+  }
+  .card-subtitle {
+    width: 250px;
+    font-size: 11px;
+    font-weight: bold;
+    color: #333;
+    /* margin-top: 5px; */
+    position: absolute;
+    top: 240px;
+    left: 40px;
+  }
+  .card-types {
+    width: 250px;
+    font-size: 14px;
+    font-weight: bold;
+    color: #333;
+    /* margin-top: 5px; */
+    position: absolute;
+    bottom: 105px;
+    left: 40px; 
+  }
+  .card-url {
+    /* width: 250px; */
+    font-size: 11px;
+    font-weight: bold;
+    color: #333;
+    /* margin-top: 5px; */
+    position: absolute;
+    bottom: -7px;
+    right: 15px;
+  }
+  .card-url a {
+    text-decoration: none;
+    color: #9c8336;
+  }
+  .card-url a:hover {
+    text-decoration: underline;
+    color: #4b3f1b;
+  }
+  /* .card-image {
+    height: 90px;
+    width: 90px;
+    border: 5px #ffd659 solid
+  } */
+  .card-image {
+    height: 180px;
+  }
+  #pokedex {
+    padding-inline-start: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+    grid-gap: 20px;
+  }
+  .card:hover {
+    animation: bounce 0.5s linear;
+  }
+  @keyframes bounce {
+    20% {
+      transform: translateY(-6px);
+    }
+    40% {
+      transform: translateY(0px);
+    }
+    60% {
+      transform: translateY(-2px);
+    }
+    80% {
+      transform: translateY(-0px);
+    }
+  }
